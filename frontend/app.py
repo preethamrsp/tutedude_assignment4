@@ -19,7 +19,7 @@ def api():
     print(data)
     return jsonify(data)
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submittodoitem', methods=['POST'])
 def submit():
     form_data = dict(request.form)
     requests.post(BACKEND_URL + '/submit', json=form_data)
