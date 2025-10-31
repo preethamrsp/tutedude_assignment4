@@ -15,7 +15,7 @@ collection = db['flask-tuteorial']
 
 app = Flask(__name__)
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submittodoitem', methods=['POST'])
 def submit():
     form_data = dict(request.json)
     collection.insert_one(form_data)
