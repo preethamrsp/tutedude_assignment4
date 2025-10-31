@@ -1,0 +1,19 @@
+{
+    "people": [
+        {
+            "name": "Raj Patel",
+            "age": 28,
+            "phone": "9876543210"
+        },
+        {
+            "name": "Priya Sharma",
+            "age": 32,
+            "phone": "8765432109"
+        },
+        {
+            "name": "Amit Kumar",
+            "age": 25,
+            "phone": "7654321098"
+        }
+    ]
+}

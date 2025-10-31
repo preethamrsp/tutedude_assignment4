@@ -11,6 +11,14 @@ def home():
     current_time = datetime.now().strftime('%H:%M:%S')
     return render_template('index.html', day_of_week=day_of_week , current_time=current_time)
 
+@app.route('/api')
+def api():
+    f=open('data.json', 'r')
+    data = json.load(f)
+    f.close()
+    print(data)
+    return jsonify(data)
+
 @app.route('/submit', methods=['POST'])
 def submit():
     form_data = dict(request.form)
