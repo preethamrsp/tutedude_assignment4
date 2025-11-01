@@ -14,7 +14,7 @@ db = client.test
 collection = db['flask-tuteorial']
 
 app = Flask(__name__)
-
+#added submittodoitem route
 @app.route('/submittodoitem', methods=['POST'])
 def submit():
     form_data = dict(request.json)
