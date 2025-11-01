@@ -14,11 +14,7 @@ db = client.test
 collection = db['flask-tuteorial']
 
 app = Flask(__name__)
-<<<<<<< HEAD
-
-=======
 #added submittodoitem route
->>>>>>> master_2
 @app.route('/submittodoitem', methods=['POST'])
 def submit():
     form_data = dict(request.json)
