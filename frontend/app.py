@@ -22,7 +22,7 @@ def api():
 @app.route('/submittodoitem', methods=['POST'])
 def submit():
     form_data = dict(request.form)
-    requests.post(BACKEND_URL + '/submit', json=form_data)
+    requests.post(BACKEND_URL + '/submittodoitem', json=form_data)
 
     return "Form submitted successfullly!"
 
